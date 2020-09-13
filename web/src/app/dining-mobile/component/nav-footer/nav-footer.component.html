@@ -1,0 +1,34 @@
+<div class="footer-buttons">
+
+    <div class="footer-groups">
+
+        <ng-container *ngIf="menuType==0||menuType==1||menuType==2">
+
+            <div class="footer-bottons item" (click)="navigateToNextPage('merchant-list')">
+                <span class="home" icon="home"></span>
+
+            </div>
+        </ng-container>
+        <ng-container *ngIf="menuType==1||menuType==2">
+            <div class="footer-bottons item">
+                <a href="tel:400-819-1718">
+                    <i class="fa fa-phone fa-fw"></i>
+                </a>
+
+            </div>
+        </ng-container>
+        <ng-container *ngIf="menuType==1||menuType==2">
+            <div class="footer-bottons item" bindtap="call">
+                <a href="" class="icon font_family icon--phone-call-2">
+                    <i class="fa fa-comments fa-fw"></i>
+                </a>
+            </div>
+        </ng-container>
+        <ng-container *ngIf="menuType==0||menuType==2">
+            <div class="footer-bottons item" (click)="navigateToNextPage('book-list')">
+                <i class="fa fa-file fa-fw"></i>
+            </div>
+        </ng-container>
+    </div>
+
+</div>

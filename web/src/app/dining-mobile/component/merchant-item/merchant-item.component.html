@@ -1,0 +1,20 @@
+<div class="row">
+    <div class="container">
+        <div class="thumbnail-item normal" *ngFor="let merchant of merchantList, let i = index " (click)="goToDetail(merchant.outBizId)">
+
+            <img src="{{merchant.commercialImg}}" class="thumbnail-png" alt="">
+            <div class="thumbnail-des-normal">
+                <div class="header">{{merchant.commercialName}}</div>
+                <div class="summary">
+
+
+                    <i class="fa fa-map fa-fw"></i><span class="mer-address">{{merchant.commercialAddress}}</span>
+
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>

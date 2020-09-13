@@ -1,0 +1,53 @@
+{
+    "code": 0,
+    "message": "",
+    "detailMessage": "",
+    "msgId": "",
+    "validError": {},
+    "content": {
+        "commercialId": "0001",
+        "commercialName": "无锡希尔顿逸林酒店自助餐厅",
+        "commercialContact": "",
+        "areCode": "",
+        "commercialPhone": "",
+        "commercialMobile": "",
+        "commercialAddress": "无锡市新吴区高思路10号",
+        "commercialDesc": "酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍酒店介绍",
+        "commercialLogo": "",
+        "commercialImg": "https://aspiredigital.cn/sos/uploadFiles/uploadImgs/20190916/b39ca5db63e147848a2b630dd1025226.jpg",
+        "memo": "",
+        "terms": "",
+        "commercialTypeId": 0,
+        "provinceCode": "",
+        "provinceName": "",
+        "cityCode": "",
+        "cityName": "",
+        "hotFlag": 0,
+        "privileges": [{
+                "privilegeId": "000099",
+                "privilegeName": "无锡希尔顿逸林酒店自助周一至周五自助餐",
+                "discount": "7折优惠",
+                "description": "周一至周五自助餐",
+                "maxTreatNum": 7,
+                "terms": "条款详情"
+            },
+            {
+                "privilegeId": "000099",
+                "privilegeName": "无锡希尔顿逸林酒店自助周一至周五自助餐",
+                "discount": "7折优惠",
+                "description": "周一至周五自助餐",
+                "maxTreatNum": 7,
+                "terms": "条款详情"
+            },
+            {
+                "privilegeId": "000099",
+                "privilegeName": "无锡希尔顿逸林酒店自助周一至周五自助餐",
+                "discount": "7折优惠",
+                "description": "周一至周五自助餐",
+                "maxTreatNum": 7,
+                "terms": "条款详情"
+            }
+
+        ]
+    }
+}

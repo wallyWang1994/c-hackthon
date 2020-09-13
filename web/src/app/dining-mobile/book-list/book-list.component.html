@@ -1,0 +1,27 @@
+<div>
+    <div class="thumbnail-list">
+        <div class="thumbnail-item normal" *ngFor="let book of bookList, let i = index ">
+            <a>
+                <img src="{{book.commercialImg}}" class="thumbnail-png" alt="">
+                <div class="thumbnail-des-normal">
+                    <div class="header">{{book.commercialName}}</div>
+                    <div class="summary">
+                        <div>
+                            <span style="background-color: transparent;display:flex">{{bookListContent.BOOK_DATE}}: {{book.bookingDate}}</span>
+                            <!-- <br> -->
+
+
+                            <span style="background-color: transparent;display:flex">{{bookListContent.DINING_TIME}}: {{book.dinningTime}}</span>
+                            <!-- <br> -->
+
+                            <span style="background-color: transparent;display:flex">{{bookListContent.COUPON_NO}}: {{book.privilegeId}}</span>
+                            <!-- <br> -->
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- <nav-footer [menuType]=0></nav-footer> -->
+</div>

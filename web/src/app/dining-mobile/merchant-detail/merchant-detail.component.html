@@ -1,0 +1,28 @@
+<div>
+    <div class="detail-content">
+        <top-image [imgUrl]=merchantDetail.commercialImg></top-image>
+
+        <div class="details-caption"> {{merchantDetail.commercialName}}</div>
+        <div class="details-sub"> {{content.MERCHANT_INTRO}}</div>
+        <div class="details-des">
+            {{merchantDetail.commercialDesc}}
+        </div>
+        <div class="details-hr"></div>
+
+        <div class="privilege-list">
+            <div class="privilege-item" *ngFor="let privilege of merchantDetail.privileges">
+                <div class="privilege-title">{{privilege.privilegeName}}</div>
+                <div class="privilege-terms">{{privilege.terms}}</div>
+                <div class="privilege-discount">{{privilege.discount}}</div>
+                <div class="privilege-type">
+                    <span class="privilege-type-desc">{{privilege.description}}</span> <button class="btn btn-primary book-now" style="float: right;" (click)="bookNow(privilege)">立即预定</button>
+                </div>
+                <div class="details-hr"></div>
+            </div>
+
+
+        </div>
+    </div>
+    <div style="height: 1.6em;"> </div>
+    <!-- <nav-footer [menuType]=1></nav-footer> -->
+</div>

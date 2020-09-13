@@ -1,0 +1,145 @@
+.thumbnail-list>div {
+    list-style-type: none;
+    margin: 0
+}
+
+.thumbnail-item {
+    padding: 0;
+    margin: .5rem 0;
+    box-shadow: 0 0 .25rem .05rem #cacaca;
+    background: #f7f7f7;
+    display: flex;
+    overflow: hidden;
+    align-items: center;
+    justify-content: left;
+    border-radius: .35rem
+}
+
+.thumbnail-item.normal {
+    border-radius: 0;
+    padding: .25rem;
+    padding: .1rem .25rem;
+    border-radius: .2rem
+}
+
+.thumbnail-item>a {
+    display: flex;
+    width: 100%;
+    color: #666;
+    height: 50vmin;
+    background-size: 100% 100%;
+    flex-direction: row;
+    text-decoration: none;
+    justify-content: center;
+    align-items: center
+}
+
+.thumbnail-item.normal>a {
+    width: 100%;
+    height: 100%
+}
+
+.thumbnail-item:first-child {
+    margin-top: 0
+}
+
+.thumbnail-png {
+    min-width: 7rem;
+    max-width: 7rem;
+    min-height: 5rem;
+    max-height: 5rem;
+    border: .1rem solid #fff
+}
+
+.thumbnail-des {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, #0808088f, transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: .5rem;
+    color: #fff
+}
+
+.thumbnail-des-normal {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: .25rem
+}
+
+.thumbnail-des-normal>.header,
+.thumbnail-des>.header {
+    font-size: .9rem;
+    font-weight: 700;
+    text-align: left;
+    width: 100%;
+    position: relative;
+    height: 1.2rem
+}
+
+.thumbnail-des-normal>.header>div,
+.thumbnail-des>.header>div {
+    width: 100%;
+    position: absolute;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden
+}
+
+.thumbnail-des-normal>.summary,
+.thumbnail-des>.summary {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    text-align: left;
+    height: 3rem;
+    font-size: .6rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    line-height: .95rem;
+    margin: 0;
+    padding: .1rem 0
+}
+
+.thumbnail-des-normal>.extro,
+.thumbnail-des>.extro {
+    text-align: right;
+    width: 100%;
+    font-size: .6rem;
+    color: #0065d6
+}
+
+.full-content {
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    z-index: 12
+}
+
+.full-mode-content {
+    height: 100%;
+    overflow: auto;
+    padding: 0;
+    -webkit-overflow-scrolling: touch
+}
+
+.full-mode-content>div {
+    padding: .25rem .5rem;
+    margin-top: 1rem
+}
+
+.thumbnail-details {
+    width: 95vmin;
+    height: 50vmin;
+    margin: .3rem auto .75rem auto;
+    display: block;
+    border-radius: .5rem
+}
