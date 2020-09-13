@@ -1,0 +1,66 @@
+
+.dining-mobile-merchant{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+   display: flex;
+   flex-direction: column;
+ 
+}
+// .binner-container{
+//     display: flex;
+//     flex-direction: column;
+// }
+.merchant-list{
+    display: flex;
+    flex-direction: column;
+    // overflow: auto;
+    background-color: red;
+    height: 100%;
+    -webkit-overflow-scrolling: touch !important;
+}
+.merchant-item-container{
+    flex:1;
+}
+.merchant-item{
+    display: flex;
+    flex-direction: column;
+    padding: .1rem .25rem;
+    border-radius: .2rem;
+    // justify-content: center;
+    // align-items: center;
+}
+.merchant-item-left{
+    display: flex;
+   flex:1;
+}
+.merchant-img{
+        min-width: 7rem;
+        max-width: 7rem;
+        min-height: 5rem;
+        max-height: 5rem;
+        border: .1rem solid #fff;
+    
+}
+.merchant-item-right{
+    display: flex;
+    flex:2;
+}
+.merchant-item-right-container{
+    display: flex;
+    flex-direction: column;
+}
+.merchantName{
+    display: flex;
+   
+}
+.merchantAddress{
+    display: flex;
+}
+.dining-mobile-common{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

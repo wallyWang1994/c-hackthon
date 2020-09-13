@@ -1,0 +1,119 @@
+<div class="book-body">
+    <top-image [imgUrl]=merchantDetail.commercialImg></top-image>
+
+    <div>{{privilegeDetail.privilegeName}}</div>
+    <div class="book-container">
+        <form class="needs-validation" #addProductForm="ngForm" (ngSubmit)="bookDining(addProductForm)">
+
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+
+                <label for="customerName">{{bookContent.CUTOMER_NAME}}</label>
+                <input type="text" id="customerName" class="form-control" name="customerName" [(ngModel)]="bookRequest.customerName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div>
+            </div>
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+                <label for="mobile">{{bookContent.CUSTOMER_TEL}}</label>
+                <input type="tel" id="mobile" class="form-control" name="mobile" [(ngModel)]="bookRequest.mobile" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+
+
+
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+                <label for="bookingDate">{{bookContent.BOOK_DATE}}</label>
+                <div class="input-group datepicker-input">
+                    <input class="form-control" placeholder="yyyy-mm-dd" name="dp" [(ngModel)]="bookRequest.bookingDate" ngbDatepicker #d="ngbDatepicker">
+                    <button class="input-group-addon" (click)="d.toggle()" type="button">
+                            <!-- <img src="img/calendar-icon.svg" style="width: 1.2rem; height: 1rem; cursor: pointer;"/> -->
+                            <span class="fa fa-calendar"></span>
+                        </button>
+                </div>
+
+                <!--                 
+                <input type="date" name="bookingDate" class="form-control" [(ngModel)]="bookRequest.bookingDate" placeholder="" id="productPrice" value="" required>
+                <div class="invalid-feedback">
+                    Valid first name is required.
+                </div> -->
+            </div>
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+                <label for="dinningTime">{{bookContent.DINING_TIME}}</label>
+                <!-- 
+                <select class="form-control" name="" id="brand_select" [(ngModel)]="selectedBrand">
+                        <option *ngFor="let time of diningTimes" [ngValue]="brand">{{brand}}</option>
+                      </select> -->
+
+
+                <input type="text" class="form-control" id="dinningTime" name="dinningTime" [(ngModel)]="bookRequest.dinningTime" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                    Valid last name is required.
+                </div>
+            </div>
+
+
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+                <label for="personCount">{{bookContent.PERSON_COUNT}}</label>
+                <input type="number" class="form-control" id="personCount" [(ngModel)]="bookRequest.personCount" name="personCount" placeholder="" required>
+            </div>
+
+            <div class="col-md-6 mb-3 custom-control-inline book-item">
+                <label for="memo">{{bookContent.REMARK}}</label>
+                <textarea type="text" class="form-control" id="memo" placeholder="" name="memo" [(ngModel)]="bookRequest.memo"></textarea>
+            </div>
+            <hr class="mb-4">
+
+            <button class="btn btn-primary btn-lg btn-block" type="submit">{{bookContent.SUBMIT}}</button>
+        </form>
+
+        <!-- <nav-footer [menuType]=1></nav-footer> -->
+    </div>
+
+
+
+
+
+
+
+    <!-- <section>
+        <div class="oldPhone">
+            <div class="left">原手机号</div>
+            <div class="right">
+                <input type="number" placeholder="请输入原手机号">
+            </div>
+        </div>
+        <div class="newPhone">
+            <div class="left">新手机号</div>
+            <div class="right">
+                <input type="number" placeholder="请输入新的手机号码">
+            </div>
+        </div>
+
+        <div class="btn">
+            <button>确认修改</button>
+        </div>
+    </section> -->
+
+    <!-- <div class="book-container">
+        <div class="book-item">
+            <div class="book-itemleft">原手机号</div>
+            <div class="book-itemright">
+                <input type="number" placeholder="请输入原手机号">
+            </div>
+        </div>
+        <div class="book-item">
+            <div class="book-item-left">新手机号</div>
+            <div class="book-item-right">
+                <input type="number" placeholder="请输入新的手机号码">
+            </div>
+        </div>
+
+        <!-- <div class="btn">
+                <button>确认修改</button>
+            </div> -->
+    <!-- </div> -->
+
+
+</div>

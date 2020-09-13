@@ -1,0 +1,14 @@
+<router-outlet></router-outlet>
+
+<igx-bottom-nav>
+    <igx-tab icon="home" routerLink="merchant-list" routerLinkActive #rla1="routerLinkActive" [isSelected]="rla1.isActive">
+    </igx-tab>
+
+    <igx-tab icon="phone" routerLinkActive #rla2="routerLinkActive" [isSelected]="rla2.isActive">
+    </igx-tab>
+    <igx-tab icon="group" routerLinkActive #rla3="routerLinkActive" [isSelected]="rla3.isActive">
+    </igx-tab>
+    <igx-tab icon="home" routerLink="book-list" routerLinkActive #rla4="routerLinkActive" [isSelected]="rla4.isActive">
+    </igx-tab>
+
+</igx-bottom-nav>

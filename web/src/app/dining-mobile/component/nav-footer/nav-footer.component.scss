@@ -1,0 +1,55 @@
+.footer-buttons {
+    min-height: 2.6rem;
+    max-height: 2.6rem;
+    font-size: 0.8rem;
+    // color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    z-index: 1;
+    box-sizing: border-box;
+}
+
+.footer-groups {
+    font-size: 0.7rem;
+    min-width: 140%;
+    height: 100%;
+    flex-direction: row;
+    // background: #565d5f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // color: #fff;
+    box-shadow: 0 0 0.3rem 0.05rem #404040;
+}
+
+.footer-groups a {
+    text-decoration: none;
+    out-line: none;
+    // color: white
+}
+
+.service {
+    border: 0;
+}
+
+.service::after {
+    width: 0;
+    height: 0;
+    border: 0px;
+}
+
+.footer-groups .item {
+    padding: 0 0.5rem;
+    text-decoration: none;
+    display: flex;
+    flex: 0.1;
+    align-items: center;
+    justify-content: center;
+    height: 2.6rem;
+    font-size: 20px;
+}
